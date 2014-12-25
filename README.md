@@ -9,7 +9,7 @@ However, **repeat** types of patterns to repeat that are not possible with `seq`
 ## Usage
 Calling:
 ```
-./repeat A b c d e
+repeat A b c d e
 ```
 Outputs:
 ```
@@ -22,7 +22,7 @@ e
 
 Calling:
 ```
-./repeat --count=2 A b c d e
+repeat --count=2 A b c d e
 ```
 Outputs:
 ```
@@ -41,7 +41,7 @@ e
 
 Calling:
 ```
-./repeat --count=2 --plus=2 A b c d e
+repeat --count=2 --plus=2 A b c d e
 ```
 Outputs:
 ```
@@ -63,7 +63,7 @@ b
 Calling:
 ```
 # NOTE that --plus is set to NEGATIVE 2. (The previous example had positive 2.)
-./repeat --count=2 --plus=-2 A b c d e
+repeat --count=2 --plus=-2 A b c d e
 ```
 Outputs:
 ```
