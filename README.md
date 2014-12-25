@@ -67,7 +67,8 @@ A
 
 Calling:
 ```
-# NOTE that --plus is set to NEGATIVE 2 this time. (The previous example had positive 1.)
+# NOTE that --plus is set to NEGATIVE 2 this time.
+# (The previous example had positive 1.)
 repeat --count=2 --plus=-2 A b c d e
 ```
 Outputs:
