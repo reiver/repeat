@@ -115,6 +115,7 @@ A + b + c + d + e + A + b + c + d + e
 Calling:
 ```
 # We use the --format switch to transform the item from pattern before outputting it.
+# "%s" in the format is magic that specifies where to put the item from the pattern.
 repeat --count=2 --format="f(%s)" A b c d e
 ```
 Outputs:
@@ -134,10 +135,21 @@ f(e)
 
 Calling:
 ```
-# We use both the --format switch and the separator switch.
+# We use both the --format switch and the --separator switch.
 repeat --count=2 --format="f(%s)" --separator=" ++ " A b c d e
 ```
 Outputs:
 ```
 f(A) ++ f(b) ++ f(c) ++ f(d) ++ f(e) ++ f(A) ++ f(b) ++ f(c) ++ f(d) ++ f(e)
+```
+
+
+Calling:
+```
+# Now with different --format switch and the --separator switch.
+repeat --count=2 --format="x = %s" --separator="; " A b c d e
+```
+Outputs:
+```
+x = A; x = b; x = c; x = d; x = e; x = A; x = b; x = c; x = d; x = e
 ```
