@@ -18,7 +18,7 @@ func main() {
 
 	// Parse the command line.
 	//
-	// This results in getting the comman line flags we previously declared.
+	// This results in getting the command line flags we previously declared.
 	// And also lets us get the (remaining) command line arguments (after the flags have been
 	// removed) with "flag.Args()".
 	//
