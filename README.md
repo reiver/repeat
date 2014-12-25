@@ -9,6 +9,7 @@ However, **repeat** types of patterns to repeat that are not possible with `seq`
 ## Usage
 Calling:
 ```
+# The pattern to repeat is: A b c d e.
 repeat A b c d e
 ```
 Outputs:
@@ -22,6 +23,8 @@ e
 
 Calling:
 ```
+# By default the pattern will only be outputted once.
+# Using --count=2 we make the pattern repeat two (2) times.
 repeat --count=2 A b c d e
 ```
 Outputs:
@@ -41,7 +44,10 @@ e
 
 Calling:
 ```
-repeat --count=2 --plus=2 A b c d e
+# We can make a pattern partially repeat with the --plus switch.
+# Using --plus=1 we make only first one (1) items from the pattern
+# repeat AFTER all the full pattern repeats.
+repeat --count=2 --plus=1 A b c d e
 ```
 Outputs:
 ```
@@ -56,13 +62,12 @@ c
 d
 e
 A
-b
 ```
 
 
 Calling:
 ```
-# NOTE that --plus is set to NEGATIVE 2. (The previous example had positive 2.)
+# NOTE that --plus is set to NEGATIVE 2. (The previous example had positive 1.)
 repeat --count=2 --plus=-2 A b c d e
 ```
 Outputs:
