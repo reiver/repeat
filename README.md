@@ -153,3 +153,18 @@ Outputs:
 ```
 x = A; x = b; x = c; x = d; x = e; x = A; x = b; x = c; x = d; x = e
 ```
+
+
+## Advanced Usage
+
+If you use **repeat** with [redimension](https://github.com/reiver/redimension) you can create a 3x3 identity matrix with:
+```
+repeat --count=2 --plus=1 1 0 0 0 | redimension --columns=3
+```
+
+Which outputs:
+```
+1	0	0
+0	1	0
+0	0	1
+```
