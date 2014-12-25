@@ -3,7 +3,7 @@
 **repeat** is a command line tool that outputs a user specified pattern a number of times, that is also specified by the user.
 
 **repeat** is somewhat similar to the `seq` command found on Linux-based and Unix-like operating systems.
-However, **repeat** types of patterns to repeat that are not possible with `seq`.
+However, the type of patterns **repeat** can create are not possible with `seq`.
 
 
 ## Usage
